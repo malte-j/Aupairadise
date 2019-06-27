@@ -1,0 +1,22 @@
+.button {
+  background: none;
+  border: 1px solid white;
+  // border-radius: 18px;
+  
+  font-size: inherit;
+  font-size: 1.2em;
+  font-family: inherit;
+  
+	padding: 1.4rem 3.6rem;
+	margin: 0;
+
+  &.light {
+    color: white;
+    border-color: white;
+  }
+  
+  &.dark {
+    color: black;
+    border-color: black;
+  }
+}
