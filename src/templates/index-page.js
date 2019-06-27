@@ -30,7 +30,7 @@ export default ({ data }) => {
 			<p>{fm.about.description}</p>
 		</section>
 	
-    {console.log(data.markdownRemark.frontmatter.about.heading)}
+    {/* {console.log(data.markdownRemark.frontmatter.about.heading)} */}
     	
 		
 		
