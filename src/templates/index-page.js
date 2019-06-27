@@ -15,12 +15,12 @@ export default ({ data }) => {
  
       <img className="logo" src={logo} alt="Trekdinner Oldenburg"/>
        
-      <Button className="light">{fm.cta}</Button>
+      <Button className="light" to="/404">{fm.cta}</Button>
 
 
       {/* <button className="button--bright">Mehr erfahren</button> */}
 			
-			<svg className="wave" viewBox="0 0 411 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg className="wave" viewBox="0 0 411 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M205.5 12C325 -14 411 12 411 12V24H0V12C0 12 86 38 205.5 12Z" fill="white"/>
 			</svg>
 		</header>

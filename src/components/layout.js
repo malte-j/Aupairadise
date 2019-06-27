@@ -22,8 +22,6 @@ export default ({ children }) => {
         <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap" rel="stylesheet"/>
       </Helmet>
 
-      {console.log(data)}
-
       {children}
     </div>
   )
