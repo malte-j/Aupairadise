@@ -28,7 +28,7 @@ export default () => {
   `)
   const { edges } = data.allMarkdownRemark;
   return (
-    <div>
+    <div className={css.blogPreview}>
       {edges.map(({node})=>(
         <Link to={node.fields.slug}>
           {node.frontmatter.title}<br/>
