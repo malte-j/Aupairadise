@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: /img
 
 collections:
   - name: blog
@@ -13,6 +13,7 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Veröffentlichungsdatum", name: "date", widget: "datetime"}
+      - {label: "Vorschaubild", name: "featuredimage", widget: image}
+      - {label: "Inhalt", name: "body", widget: "markdown"}

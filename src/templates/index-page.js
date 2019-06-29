@@ -1,10 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
-import "./index-page.scss"
 import {  graphql } from "gatsby";
 
+import "./index-page.scss"
+
+import Layout from "../components/layout"
 import logo from "../../static/logo.svg"
 import Button from "../components/button"
+import BlogPreview from "../components/blogPreview"
 
 export default ({ data }) => {
   const fm = data.markdownRemark.frontmatter
@@ -37,7 +39,7 @@ export default ({ data }) => {
 		<section className="log">
 			<h1>{fm.postsName}</h1>
 
-			<div className="posts">
+			{/* <div className="posts">
 				<div className="post">
 					<img src="https://fillmurray.com/900/500" alt=""/>
 					<p>Hello there, General Kenobi, I'd really like to talk to you.</p>
@@ -47,10 +49,11 @@ export default ({ data }) => {
 					<img src="https://fillmurray.com/900/500" alt=""/>
 					<p>You're a bold one!</p>
 				</div>
-			</div>
+			</div> */}
 
-			<button className="button--fullwidth">Alle Einträge anschauen</button>
+      <BlogPreview/>
 
+      <Button className="dark">Alle Einträge anschauen</Button>
 		</section>
 
 		<section>
