@@ -51,7 +51,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 
   // Convert frontmatter image paths to relative paths 
-  fmImagesToRelative(node);
+  fmImagesToRelative(node)
 
   
   if (node.internal.type === `MarkdownRemark`) {

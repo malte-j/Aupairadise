@@ -1,0 +1,54 @@
+@import '../../styles/colors.scss';
+@import '../../styles/layout.scss';
+
+$shadow: 0px 1px 4px rgba(0,0,0,0.1);
+
+.navbar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background: $light;
+  box-shadow: $shadow;
+
+  .wrapper {	
+		height: 60px;
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		max-width: $desktopMaxWidth;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &--chameleon {
+    box-shadow: none;
+    position: fixed;
+    background: transparent;
+    transition-property: background;
+    transition-duration: .3s;
+
+    a {
+      color: $light;
+    }
+  }
+}
+
+.navbar--active {
+  background: $light;
+  
+  a {
+    color: black;
+    transition-property: color;
+    transition-duration: .3s;
+  }
+
+  box-shadow: $shadow;
+
+}
+

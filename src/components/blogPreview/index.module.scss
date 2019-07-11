@@ -1,0 +1,44 @@
+.post {
+  position: relative;
+  margin: 1.25em;
+  // width: 100%;
+
+  .thumbnail {
+    position: relative;
+    // height: 100%;
+    // display: block;
+    // width: 100%;
+    > {
+      max-width: 100%;  
+    }
+  }
+
+  .title {
+    position: absolute;
+    // z-index: 1;
+    // right: 0;
+    // width: 100%;
+    padding: .4em;
+    bottom: 0;
+    right: 0;
+    text-shadow: 0px 0px 3px  rgba(0, 0, 0, 0.3),
+    0px 1px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+  }
+}
+
+
+@media (min-width: 900px) {
+	.posts {	
+		display: flex;
+	 	margin: 0 auto;
+		width: 90vw;
+		margin-bottom: 1.25em;
+  }
+  .post {
+    margin: .5em;
+    width: 100%;
+  }
+}

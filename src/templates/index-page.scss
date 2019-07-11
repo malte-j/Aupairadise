@@ -1,10 +1,12 @@
+@import '../styles/colors.scss';
+@import '../styles/layout.scss';
 
 header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background: linear-gradient(180deg, #1A212F 0%, #101113 100%);
+	background: $headerGradient;
 	
 	height: 80vh;
 	
@@ -22,7 +24,7 @@ header {
 }
 
 section {
-	max-width: 800px;
+	max-width: $desktopMaxWidth;
 	padding: 0 1.25em;
 	margin: 3em auto 3em auto;
   > * + * {

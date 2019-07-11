@@ -23,7 +23,7 @@ export default () => {
               date
               featuredimage {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
+                  fluid(maxWidth: 900) {
                    ...GatsbyImageSharpFluid
                   }
                 }
@@ -36,14 +36,14 @@ export default () => {
   `)
   const { edges } = data.allMarkdownRemark;
   return (
-    <div className={css.blogPreview}>
-      {edges.map(({node})=>(
-        <Link to={node.fields.slug}>
-          <Img fluid={node.frontmatter.featuredimage.childImageSharp.fluid} />
-          {node.frontmatter.title}<br/>
-        </Link>
-        
-      
+    <div className={css.posts}>
+      {edges.map(({node})=>(        
+        <div className={css.post} key={node.fields.slug}>
+          <Link to={node.fields.slug} > 
+            <Img fluid={node.frontmatter.featuredimage.childImageSharp.fluid} className={css.thumbnail}/>
+          </Link>
+          <Link className={css.title} to={node.fields.slug}> {node.frontmatter.title} </Link>
+        </div>        
       ))}
     </div>
   )

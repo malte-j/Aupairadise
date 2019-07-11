@@ -2,8 +2,9 @@ import React from "react"
 import Helmet from "react-helmet"
 import "../styles/global.scss"
 import { useStaticQuery, graphql } from "gatsby"
+import NavBar from "./navBar"
 
-export default ({ children }) => {
+export default ({ children, nav }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -22,6 +23,9 @@ export default ({ children }) => {
         <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap" rel="stylesheet"/>
       </Helmet>
 
+
+      <NavBar {...nav}/>
+      
       {children}
     </div>
   )

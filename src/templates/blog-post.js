@@ -10,9 +10,11 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
    <Layout>
+    <section>
       <h1>{ frontmatter.title }</h1>
       <h2>{ frontmatter.date} </h2>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
+    </section>
    </Layout>
   )
 }
