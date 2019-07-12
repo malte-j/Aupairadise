@@ -22,5 +22,3 @@ export const query = graphql`
     }
   }
 `
-
-// Data in Gatsby - Your first GraphQL query

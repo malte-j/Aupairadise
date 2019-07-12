@@ -43,7 +43,6 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav className={`${css.navbar} ${this.state.currentClass}`}>
-          {console.log(css)}
           <div className={css.wrapper}>
             <Link to="/">Home</Link>
             <Link to="/about">Über Uns</Link>

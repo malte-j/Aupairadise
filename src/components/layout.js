@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import "../styles/global.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import NavBar from "./navBar"
+import Footer from "../components/footer"
 
 export default ({ children, nav }) => {
   const data = useStaticQuery(
@@ -23,10 +24,11 @@ export default ({ children, nav }) => {
         <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap" rel="stylesheet"/>
       </Helmet>
 
-
       <NavBar {...nav}/>
       
       {children}
+
+      <Footer/>
     </div>
   )
 }

@@ -10,8 +10,13 @@
     text-decoration: none;
   
     display: inline-block;
-    padding: 1.4rem 3.6rem;
+    padding: .8em 1.6em;
     margin: 0;
+    
+    img {
+      display: block;
+      height: 1em;
+    }
   }
 
   &.light a{

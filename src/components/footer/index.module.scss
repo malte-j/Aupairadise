@@ -1,0 +1,27 @@
+@import '../../styles/colors.scss';
+.footer  {
+  background: $headerGradient;
+  color: $light;
+  
+  font-size: 0.9em;
+  margin-top: 2em;
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  .wave {
+		align-self: flex-start;
+		align-self: stretch;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 1em 0;
+  }
+}

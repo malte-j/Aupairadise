@@ -51,8 +51,12 @@ h1, h2, h3, h4 {
 section {
 	max-width: 800px;
 	padding: 0 1.25em;
-	margin: 3em auto 3em auto;
   > * + * {
     margin-top: 1rem;
+  }
+
+  + section {
+    margin: 0 auto;
+    margin-top: 3em;
   }
 }

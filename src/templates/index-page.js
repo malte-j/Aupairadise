@@ -36,12 +36,7 @@ export default ({ data }) => {
 		</section>
       
       <BlogPreview/>
-      <Button to="/" type={['dark', 'centered']}>Alle Einträge anschauen</Button>
-
-		<section>
-
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sed expedita dicta iure sapiente eum omnis blanditiis reiciendis, ducimus asperiores error porro culpa ratione, itaque quisquam? Optio, repellendus voluptates.</p>
-		</section>   
+      <Button to="/blog" type={['dark', 'centered']}>Alle Einträge anschauen</Button>
 
     </Layout>)
 }
