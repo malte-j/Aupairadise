@@ -1,7 +1,7 @@
 {
-  "name": "TrekdinnerOldenburg",
+  "name": "aupairadise-blog",
   "private": true,
-  "description": "Website/Blog für das Trekdinner Oldenburg",
+  "description": "Aupairadise Blog für Luise",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -9,8 +9,7 @@
     "develop": "gatsby develop -p 8080",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "gatsby": "^2.13.18",
@@ -35,9 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/SkyGuardian42/Aupairadise"
   }
 }

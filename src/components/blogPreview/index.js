@@ -7,11 +7,12 @@ export default () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] },
         filter: {
           frontmatter:
             {templateKey: {eq: "blog-post"}}
         },
-        limit: 2
+        limit: 8
       ){
         edges {
           node {
@@ -23,7 +24,7 @@ export default () => {
               date
               featuredimage {
                 childImageSharp {
-                  fluid(maxWidth: 900) {
+                  fluid(maxWidth: 500) {
                    ...GatsbyImageSharpFluid
                   }
                 }
@@ -34,16 +35,18 @@ export default () => {
       }
     }
   `)
-  const { edges } = data.allMarkdownRemark;
+  const { edges: posts } = data.allMarkdownRemark;
   return (
     <div className={css.posts}>
-      {edges.map(({node})=>(        
-        <div className={css.post} key={node.fields.slug}>
-          <Link to={node.fields.slug} > 
-            <Img fluid={node.frontmatter.featuredimage.childImageSharp.fluid} className={css.thumbnail}/>
-          </Link>
-          <Link className={css.title} to={node.fields.slug}> {node.frontmatter.title} </Link>
-        </div>        
+      {posts.map(({node: post})=>(        
+        <article className={css.post} key={post.fields.slug}>
+          <div className={css.inside}>
+            <Link to={post.fields.slug} > 
+              <Img fluid={post.frontmatter.featuredimage.childImageSharp.fluid} className={css.thumbnail}/>
+            </Link>
+            <Link className={css.title} to={post.fields.slug}> {post.frontmatter.title} </Link>
+          </div>
+        </article>        
       ))}
     </div>
   )

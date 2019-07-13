@@ -1,3 +1,5 @@
+@import "./layout.scss";
+
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
@@ -24,17 +26,17 @@
 $min_width: 320px;
 $max_width: 1020px;
 $min_font: 16px;
-$max_font: 24px;
+$max_font: 20px;
 
 * {
   box-sizing: border-box;
-  margin: 0;
+ 
 }
 
 html {
 	font-size: 10px;
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  font-family: sans-serif;
 }
 
 body {
@@ -53,46 +55,14 @@ body {
   }
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Didact Gothic', sans-serif;
-  font-weight: bold;
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 section {
-	max-width: 800px;
-	padding: 0 1.25em;
-  > * + * {
-    margin-top: 1rem;
-  }
-
-  + section {
-    margin: 0 auto;
-    margin-top: 3em;
-  }
+  max-width: $desktopMaxWidth;
+  padding: 1em;
+  margin: 0 auto;
 }
-
-table {
-  margin: 1em 0;
-
-  text-align: left;
-  border-collapse: collapse;
-
-  th, td {
-    padding: .3em .8em;
-  }
-
-  tbody > tr {
-    border-top: 1px solid rgb(175, 175, 175);
-    
-    &:first-child {
-      border-width: 2px; 
-    }
-  }
-}
-
-// table, th, td {
-//   border: 1px solid black;
-//   padding: 0;
-//   text-align: left;
-//   border-collapse: collapse;
-// }

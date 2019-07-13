@@ -1,27 +1,15 @@
 @import '../../styles/colors.scss';
 .footer  {
-  background: $headerGradient;
-  color: $light;
-  
-  font-size: 0.9em;
-  margin-top: 2em;
-  
-  .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1em;
-  }
-
-  .wave {
-		align-self: flex-start;
-		align-self: stretch;
-  }
+  // background: black;
+  // color: white;
+  margin-top: 4em;
+  // border-radius: .8em .8em 0 0;
 
   .copyright {
     text-align: center;
     padding: 1em 0;
+    margin: 0;
+    font-weight: 600;
+    // letter-spacing: .2em;
   }
 }

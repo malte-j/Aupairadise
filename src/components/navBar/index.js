@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
+
+import logo from "../../../static/AupairadiseLogoSmall.svg"
 import css from "./index.module.scss"
 
 const Navbar = class extends React.Component {
@@ -44,9 +46,12 @@ const Navbar = class extends React.Component {
     return (
       <nav className={`${css.navbar} ${this.state.currentClass}`}>
           <div className={css.wrapper}>
-            <Link to="/">Home</Link>
-            <Link to="/blog">Captain's Log</Link>
-            <Link to="/contact">Kontakt</Link>
+            <Link to="/"><img src={ logo } alt=""/></Link>
+            <div className={ css.links }>
+              <Link to="/blog">Blog</Link>
+              <Link to="/ich">Über mich</Link>
+              <Link to="/kontakt">Kontakt</Link>
+            </div>
           </div>
       </nav>
     )

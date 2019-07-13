@@ -18,10 +18,10 @@ export default ({ children, nav }) => {
     `
   )
   return (
-    <div>
+    <div className="layout">
       <Helmet>
         <title>{data.site.siteMetadata.title}</title>
-        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap&text=Aupairadise" rel="stylesheet"/>>
       </Helmet>
 
       <NavBar {...nav}/>

@@ -29,9 +29,9 @@ collections:
           - {label: CTA, name: cta, widget: string}
           - {label: Info, name: about, widget: object, fields: [{label: Titel, name: heading, widget: string}, {label: Beschreibung, name: description, widget: text}]}
           - {label: "Blog Name", name: postsName, widget: string}
-      - file: "src/pages/contact.md"
+      - file: "src/pages/kontakt.md"
         label: "Kontakt"
-        name: "contact"
+        name: "kontakt"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Titel, name: title, widget: string}

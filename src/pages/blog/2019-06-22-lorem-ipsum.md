@@ -1,11 +1,11 @@
 ---
 templateKey: blog-post
-title: Ich in Amerika
-date: 2019-08-27T19:26:52.357Z
-featuredimage: /img/photo-1508816802357-0a307a492db8.jpeg
+title: Die besten Reiseziele
+date: 2019-06-27T19:26:52.357Z
+featuredimage: /img/photo-1416466990059-6d32e4a39f10.jpeg
 ---
 
-FristLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula mattis scelerisque. Morbi eget elit massa. Fusce placerat vestibulum elit vel pellentesque. Morbi aliquet diam vitae libero mattis, quis ornare tortor tincidunt. Sed sem neque, viverra quis dapibus sit amet, laoreet id sem. Phasellus at tincidunt nunc. In dolor risus, luctus eget sapien facilisis, convallis tristique nibh. Pellentesque vehicula et urna sed venenatis. Cras placerat, neque eu laoreet consequat, est eros congue nibh, eu tincidunt arcu odio et odio. Pellentesque quis turpis id enim condimentum convallis in ac eros. Morbi vitae urna risus. Morbi feugiat urna ut metus ornare aliquet.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula mattis scelerisque. Morbi eget elit massa. Fusce placerat vestibulum elit vel pellentesque. Morbi aliquet diam vitae libero mattis, quis ornare tortor tincidunt. Sed sem neque, viverra quis dapibus sit amet, laoreet id sem. Phasellus at tincidunt nunc. In dolor risus, luctus eget sapien facilisis, convallis tristique nibh. Pellentesque vehicula et urna sed venenatis. Cras placerat, neque eu laoreet consequat, est eros congue nibh, eu tincidunt arcu odio et odio. Pellentesque quis turpis id enim condimentum convallis in ac eros. Morbi vitae urna risus. Morbi feugiat urna ut metus ornare aliquet.
 
 ![Alternative Text](/img/amalgam.png "Title")
 

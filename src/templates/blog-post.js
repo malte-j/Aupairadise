@@ -28,7 +28,12 @@ export default function Template({
 
   return (
     <Layout>
-     <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
+      {
+        (frontmatter.featuredimage ? 
+          <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
+        : "")
+
+      }
 
       <section>
         <h1 className="title" >{ frontmatter.title }</h1>

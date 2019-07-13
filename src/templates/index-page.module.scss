@@ -1,0 +1,35 @@
+@import '../styles/colors.scss';
+@import '../styles/layout.scss';
+
+$max-width: 890px;
+
+.header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	justify-content: center;
+	min-height: 50vh;
+	padding: 2em .6em;
+	
+	h1 {
+		font-family: 'DM Serif Display', serif;
+		font-weight: 500;
+		font-size: calc(2em + 6vw);
+		margin: 0;
+		color: #222;
+		margin-bottom: .3em;
+	}
+
+	img {
+		width: 70vw;
+		max-width: 800px;
+	}
+
+	h2 {
+		font-size: .9em;
+		max-width: calc(#{$max-width} - #{$max-width} / 2);
+		font-weight: 300;
+		text-align: center;
+	}
+}
