@@ -17,3 +17,25 @@ collections:
       - {label: "Veröffentlichungsdatum", name: "date", widget: "datetime"}
       - {label: "Vorschaubild", name: "featuredimage", widget: image}
       - {label: "Inhalt", name: "body", widget: "markdown"}
+  - name: pages
+    label: Seiten
+    files:
+      - file: "src/pages/index.md"
+        label: "Vorderseite"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: Titel, name: title, widget: string}
+          - {label: CTA, name: cta, widget: string}
+          - {label: Info, name: about, widget: object, fields: [{label: Titel, name: heading, widget: string}, {label: Beschreibung, name: description, widget: text}]}
+          - {label: "Blog Name", name: postsName, widget: string}
+      - file: "src/pages/contact.md"
+        label: "Kontakt"
+        name: "contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: Titel, name: title, widget: string}
+          - {label: CTA, name: cta, widget: string}
+          # - {label: Info, name: about, widget: object, fields: [{label: Titel, name: heading, widget: string}, {label: Beschreibung, name: description, widget: text}]}
+          # - {label: "Blog Name", name: postsName, widget: string}
+              

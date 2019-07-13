@@ -5,6 +5,16 @@ import Layout from "../components/layout"
 export default ({data}) => (
   <Layout>
 
+    <section>
+      <h1>{ data.markdownRemark.frontmatter.title }</h1>
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
+    </section>
+
+    <section>
+     <div style={{ height: "60vh"}} dangerouslySetInnerHTML={{ __html: data.markdownRemark.frontmatter.map }}></div>
+    </section>
+
+
   </Layout>
 )
 
@@ -13,13 +23,9 @@ query {
   markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
     frontmatter {
       title
-      cta
-      about {
-        heading
-        description
-      }
-      postsName
+      map
     }
+    html
   }
 }
 `

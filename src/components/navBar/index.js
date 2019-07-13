@@ -45,9 +45,8 @@ const Navbar = class extends React.Component {
       <nav className={`${css.navbar} ${this.state.currentClass}`}>
           <div className={css.wrapper}>
             <Link to="/">Home</Link>
-            <Link to="/about">Über Uns</Link>
-            <Link to="/contact">Kontakt</Link>
             <Link to="/blog">Captain's Log</Link>
+            <Link to="/contact">Kontakt</Link>
           </div>
       </nav>
     )
