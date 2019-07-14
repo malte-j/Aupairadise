@@ -4,6 +4,7 @@ import css from "./index.module.scss"
 import Img from "gatsby-image"
 
 import Layout from "../../components/layout"
+import BlogPreview from "../../components/blogPreview"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -41,9 +42,11 @@ export default () => {
     <Layout>
       <div>
         
-        <h1 className={ css.title }>Captain's Log</h1> 
+        <h1 className={ css.title }>Mein Blog</h1> 
         
-        <div className={ css.posts }>
+        <BlogPreview/> 
+
+        {/* <div className={ css.posts }>
           {edges.map(({node})=>(        
             <div className={css.inside} key={node.fields.slug}>
               <Link className={css.thumbnail} to={node.fields.slug} > 
@@ -52,7 +55,7 @@ export default () => {
               <Link className={css.title} to={node.fields.slug}> {node.frontmatter.title} </Link>
             </div>        
           ))}
-        </div>
+        </div> */}
 
       </div>
     </Layout>

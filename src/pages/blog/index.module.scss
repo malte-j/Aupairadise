@@ -2,10 +2,11 @@
 
 .title {
   font-size: 1.8em;
+  text-align: center;
   max-width: $desktopMaxWidth;
   margin: 0 auto;
   display: block;
-  padding: .6em;
+  padding: 2em .6em;
 }
 
 .posts {
@@ -16,19 +17,6 @@
     margin-top: 1em;
   }
 }
-
-// @media (min-width: $desktopMaxWidth) {
-//   .posts {
-//     display: grid;
-//     grid-gap: 1em;
-//     grid-template-columns: 1fr 1fr;
-
-//     >*+* {
-//       margin-top: 0;
-//     }
-//   }
-
-// }
 
 .inside {
   color: white;

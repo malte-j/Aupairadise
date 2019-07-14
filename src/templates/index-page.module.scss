@@ -21,8 +21,10 @@ $max-width: 890px;
 		margin-bottom: .3em;
 	}
 
+
+
 	img {
-		width: 70vw;
+		width: calc(10em + 30vw);
 		max-width: 800px;
 	}
 

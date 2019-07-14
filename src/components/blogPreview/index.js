@@ -24,7 +24,7 @@ export default () => {
               date
               featuredimage {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
+                  fluid(maxWidth: 700) {
                    ...GatsbyImageSharpFluid
                   }
                 }

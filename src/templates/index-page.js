@@ -12,9 +12,9 @@ export default ({ data }) => {
   return (
   <Layout>
     <header className={css.header}> 
-      <h1>Aupairadise</h1>
+      {/* <h1>Aupairadise</h1> */}
       
-      {/* <img src={ logo } alt="Aupairadise"/> */}
+      <img src={ logo } alt="Aupairadise"/>
       <h2>{fm.blogDescription}</h2>
 		</header>
 		    
