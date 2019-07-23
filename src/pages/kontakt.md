@@ -9,6 +9,6 @@ map: >-
 ---
 Instagram: au__pairadise
 
-Podcast aus soundcloud und Spotify: Aupairadise
+Podcast auf soundcloud und Spotify: Aupairadise
 
 Mail: aupairadise@web.de
