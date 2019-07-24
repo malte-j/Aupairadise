@@ -26,14 +26,18 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Titel, name: title, widget: string}
-          - {label: CTA, name: cta, widget: string}
-          - {label: Info, name: about, widget: object, fields: [{label: Titel, name: heading, widget: string}, {label: Beschreibung, name: description, widget: text}]}
-          - {label: "Blog Name", name: postsName, widget: string}
+          - {label: Kurzbeschreibung, name: blogDescription, widget: string}
       - file: "src/pages/kontakt.md"
         label: "Kontakt"
         name: "kontakt"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Titel, name: title, widget: string}
-          - {label: "Map Link", name: map, widget: string}
-          - {label: "Details", name: "body", widget: "markdown"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
+      - file: "src/pages/ich.md"
+        label: "Ich"
+        name: "ich"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "ich-page"}
+          - {label: Titel, name: title, widget: string}
+          - {label: "Inhalt", name: "body", widget: "markdown"}

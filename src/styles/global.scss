@@ -60,7 +60,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   >:nth-child(2) {
-    height: 100%;
+    flex-grow: 1;
+    width: 100%;
   }
 }
 
@@ -68,4 +69,13 @@ section {
   max-width: $desktopMaxWidth;
   padding: 1em;
   margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 1.8em;
+  text-align: center;
+  max-width: $desktopMaxWidth;
+  margin: 0 auto;
+  display: block;
+  padding: 2em .6em;
 }

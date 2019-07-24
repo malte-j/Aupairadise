@@ -2,9 +2,32 @@
 templateKey: ich-page
 title: "Über mich"
 ---
+Hello people, mein Name ist Luise. Ich bin 18 Jahre alt und grade auf dem
+Weg nach Amerika. Hier werde ich das kommende Jahr verbringen. Um genau zu
+sein in einem Vorort von Philadelphia. Philadelphia liegt noch im Staat
+Pennsylvania, während ich grade an der Grenze zu New Jersey leben werde. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies felis ac metus efficitur, vitae blandit massa posuere. Curabitur non nisi sapien. Vivamus quis odio mollis, iaculis magna eleifend, dictum dui. Integer molestie vitae urna vel facilisis. Curabitur tellus magna, lacinia a erat posuere, facilisis vehicula ex. In eget nisi eu lacus viverra ultricies. Phasellus eget tortor at urna iaculis efficitur a vitae lacus. Sed vulputate, quam ut mattis porta, lacus elit iaculis sem, nec feugiat augue nunc sed mauris. Mauris efficitur, est et faucibus malesuada, massa libero blandit sapien, nec vestibulum nunc enim sit amet arcu. Sed semper quam risus, quis bibendum sem ullamcorper sit amet.
+Achja, ich mache übrigens ein Au-pair-Jahr falls das noch nicht klar
+geworden ist. 
 
-In sollicitudin elementum massa sed fermentum. Fusce viverra tellus non aliquam aliquet. Vestibulum suscipit sodales venenatis. Nunc egestas dui et odio ultrices auctor. Ut iaculis arcu felis. Integer suscipit eros lacinia, scelerisque arcu sit amet, elementum erat. Donec bibendum dictum maximus.
+Ich werde also ein Jahr auf Kinder aufpassen. Bei mir sind es genau zwei.
+Zwei kleine Jungs im Alter von 4 und 1 Jahren. Und dann gibts da noch meine
+Gasteltern. Meine Gastmutter fängt jetzt wieder an zu arbeiten, nachdem sie
+ein Jahr wegen dem Kleinen ausgesetzt hat, als Mathelehrerin für ca.
+13jährige. Mein Gastvater ist Anwalt bei irgendeinem riesen Unternehmen in
+Amerika. Ja, er hat mir das alles mal genau erklärt, aber davon ist weniger
+hängengeblieben leider -ich hoffe, ich check das nochmal besser, weil bisher
+ich bisher nur „wichtig“ und „CEOs“ verstanden. 
 
-Donec ultricies finibus mauris, eget sollicitudin nisi dictum ut. Curabitur gravida euismod leo, in posuere eros malesuada nec. Donec sit amet vehicula augue, eu tristique orci. Duis feugiat lorem at nisi luctus, non sodales purus tristique. Nam at sem pellentesque, aliquam mauris a, convallis felis. Nunc aliquet ex in mauris porttitor iaculis eu sed massa. Nulla aliquet enim non urna interdum, quis venenatis ex accumsan. Praesent in luctus purus. Curabitur iaculis augue quis nulla sollicitudin venenatis ac eu mi.
+Während ich das hier schreibe, sitze ich grade am Flughafen in Frankfurt und
+warte auf meinen Flug, der mich direkt nach New York bringen wird. Heute
+morgen um 06 20 Uhr ging mein Flug von Hamburg, wo ich mich von meiner
+Familie verabschieden musste. Naja, ein Jahr sehen wir uns jetzt nicht. 
+
+Bis jetzt bin ich allerdings nur aufgeregt.
+
+Ich würde mich freuen, wenn du mein Au-pair-Jahr mitverfolgst.
+
+Hier, auf Instagram unter au__pairadise oder bei meinem Podcast Aupairadise.
+
+Ich freue mich, das Abenteuer mit dir zu starten.

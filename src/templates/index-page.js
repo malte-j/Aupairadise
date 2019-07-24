@@ -12,23 +12,18 @@ export default ({ data }) => {
   return (
   <Layout>
     <header className={css.header}> 
-      {/* <h1>Aupairadise</h1> */}
-      
       <img src={ logo } alt="Aupairadise"/>
       <h2>{fm.blogDescription}</h2>
 		</header>
 		    
-      <BlogPreview/>
-      {/* <Button to="/blog" type={['dark', 'centered']}>Alle Einträge anschauen</Button> */}
-
-    </Layout>)
+    <BlogPreview/>
+  </Layout>)
 }
 
 export const pageQuery = graphql`
 query {
   markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
     frontmatter {
-      title
       blogDescription
     }
   }
