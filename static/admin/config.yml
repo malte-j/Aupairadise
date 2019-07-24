@@ -25,7 +25,6 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Titel, name: title, widget: string}
           - {label: Kurzbeschreibung, name: blogDescription, widget: string}
       - file: "src/pages/kontakt.md"
         label: "Kontakt"
