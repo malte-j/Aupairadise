@@ -2,7 +2,7 @@
 
 .featuredImage {
   margin: 0 auto;
-  max-height: 50vh;
+  max-height: 30vh;
   min-width: $desktopMaxWidth;
 }
 
@@ -13,15 +13,19 @@
   }
 }
 
+.header {
+  margin: 3em 0;
+}
+
 .title {
   text-align: center;
   font-size: 2.5em;
-  margin: 2em 0 .4em 0;
+  margin: 0;
 }
 
 .date {
   text-align: center;
-  margin: .4em 0 2em 0;
+  margin: 0;
   font-size: 1.2em;
   font-weight: 400;
 
@@ -29,6 +33,7 @@
 
 section {
   margin-top: 0;
+  padding-top: 0;
 }
 
 section  p + p {

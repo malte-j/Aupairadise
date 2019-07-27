@@ -28,18 +28,21 @@ export default function Template({
 
   return (
     <Layout>
-      {
-        (frontmatter.featuredimage ? 
-          <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
-        : "")
+      <article>
+        {
+          (frontmatter.featuredimage ? 
+            <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
+          : "")
 
-      }
-
-      <section>
-        <h1 className="title" >{ frontmatter.title }</h1>
-        <h2 className="date">{ frontmatter.date} </h2>
-        <div dangerouslySetInnerHTML={{ __html: html }}></div>
-      </section>
+        }
+        <div className="header">
+          <h1 className="title" >{ frontmatter.title }</h1>
+          <h2 className="date">{ frontmatter.date} </h2>
+        </div>
+        <section>
+          <div dangerouslySetInnerHTML={{ __html: html }}></div>
+        </section>
+      </article>
     </Layout>
   )
 }
