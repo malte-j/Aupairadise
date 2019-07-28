@@ -9,50 +9,6 @@
   padding: 2em .6em;
 }
 
-.posts {
-  padding: 1em;
-  margin: 0 auto;
-  max-width: $desktopMaxWidth;
-  >*+* {
-    margin-top: 1em;
-  }
-}
-
-.inside {
-  color: white;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  
-  .thumbnail {
-    position: relative;
-    width: 100%;
-    // height: 100%;
-    // object-fit: cover;
-  }
-  
-  .title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.6em;
-    margin: 0;
-    font-size: 1.2em;
-    color: white;
-    z-index: 0;
-    text-decoration: none;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 120%;
-      height: 120%;
-      bottom:0;
-      left: 0;
-      z-index: -1;
-      background: rgba(0,0,0,0.6);
-      filter: blur(40px);	
-    }
-    
-  }
+section {
+  max-width: 1000px;
 }

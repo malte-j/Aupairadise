@@ -21,7 +21,7 @@ export default ({ children, nav }) => {
     <div className="layout">
       <Helmet>
         <title>{data.site.siteMetadata.title}</title>
-        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap&text=Aupairadise" rel="stylesheet"/>>
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet"></link>
       </Helmet>
 
       <NavBar {...nav}/>

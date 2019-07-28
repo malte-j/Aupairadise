@@ -1,15 +1,13 @@
 @import '../../styles/colors.scss';
 .footer  {
-  // background: black;
-  // color: white;
   margin-top: 4em;
-  // border-radius: .8em .8em 0 0;
 
   .copyright {
     text-align: center;
     padding: 1em 0;
     margin: 0;
+
+    font-family: sans-serif;
     font-weight: 600;
-    // letter-spacing: .2em;
   }
 }

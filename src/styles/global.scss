@@ -28,6 +28,9 @@ $max_width: 1020px;
 $min_font: 16px;
 $max_font: 20px;
 
+$body_font: 'PT Serif';
+$heading_font: sans-serif;
+
 * {
   box-sizing: border-box;
  
@@ -36,7 +39,7 @@ $max_font: 20px;
 html {
 	font-size: 10px;
   height: 100%;
-  font-family: sans-serif;
+  font-family: $body_font;
 }
 
 body {
@@ -78,4 +81,13 @@ section {
   margin: 0 auto;
   display: block;
   padding: 2em .6em;
+}
+
+p {
+  font-family: $body_font;
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading_font;
 }

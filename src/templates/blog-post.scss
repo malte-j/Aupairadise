@@ -15,17 +15,19 @@
 
 .header {
   margin: 3em 0;
+
 }
 
 .title {
   text-align: center;
   font-size: 2.5em;
+  font-weight: 600;
   margin: 0;
 }
 
 .date {
   text-align: center;
-  margin: 0;
+  margin: .4em;
   font-size: 1.2em;
   font-weight: 400;
 
@@ -39,3 +41,12 @@ section {
 section  p + p {
   margin-top: 1em;
 }
+
+.layout > article {
+  transition: padding .2s ease-in-out;
+  
+  @media(min-width: $desktopMaxWidth) {
+    padding-top: 1em;
+  }
+}
+

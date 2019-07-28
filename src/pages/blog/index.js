@@ -8,13 +8,13 @@ import BlogPreview from "../../components/blogPreview"
 export default () => {
   return (
     <Layout>
-      <section>
+      <div>
         
         <h1 className={ css.title }>Mein Blog</h1> 
         
         <BlogPreview/> 
 
-      </section>
+      </div>
     </Layout>
   )
 }
