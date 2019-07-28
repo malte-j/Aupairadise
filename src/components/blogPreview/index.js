@@ -37,21 +37,21 @@ export default () => {
       soundcloud: file(relativePath: {eq: "socialImages/Soundcloud.jpg"}) {
         childImageSharp {
           
-          fluid(maxWidth: 350, quality: 90) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       instagram: file(relativePath: {eq: "socialImages/Instagram.jpg"}) {
         childImageSharp {
-          fluid(maxWidth: 350, quality: 90) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       spotify: file(relativePath: {eq: "socialImages/Spotify.jpg"}) {
         childImageSharp {
-          fluid(maxWidth: 350, quality: 90) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -68,14 +68,14 @@ export default () => {
     },
     {
       title: "Podcast",
+      link: "https://soundcloud.com/aupairadise",
+      image: data.soundcloud
+    }, 
+    {
+      title: "Podcast",
       link: "https://open.spotify.com/show/7znUWUFuaMUFdSyV564bQt",
       image: data.spotify
     },
-    {
-      title: "Podcast",
-      link: "https://soundcloud.com/aupairadise",
-      image: data.soundcloud
-    }  
   ]
 
   return (
@@ -92,7 +92,7 @@ export default () => {
       ))}
 
       {socialLinks.map(link => (
-        <div className={ css.post }>
+        <div className={ `${css.post} ${css.social}` } key={link.link}>
           <div className={ css.inside }>
             <a href={ link.link } target="_blank" rel="noopener noreferrer" >
               <Img fluid={link.image.childImageSharp.fluid} className={css.thumbnail}/>
