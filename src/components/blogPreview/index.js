@@ -33,9 +33,51 @@ export default () => {
           }
         }
       }
+    
+      soundcloud: file(relativePath: {eq: "socialImages/Soundcloud.jpg"}) {
+        childImageSharp {
+          
+          fluid(maxWidth: 350, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      instagram: file(relativePath: {eq: "socialImages/Instagram.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 350, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      spotify: file(relativePath: {eq: "socialImages/Spotify.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 350, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   const { edges: posts } = data.allMarkdownRemark;
+
+  const socialLinks = [
+    {
+      title: "Instagram",
+      link: "https://www.instagram.com/au__pairadise/",
+      image: data.instagram
+    },
+    {
+      title: "Podcast",
+      link: "https://open.spotify.com/show/7znUWUFuaMUFdSyV564bQt",
+      image: data.spotify
+    },
+    {
+      title: "Podcast",
+      link: "https://soundcloud.com/aupairadise",
+      image: data.soundcloud
+    }  
+  ]
+
   return (
     <div className={css.posts}>
       {posts.map(({node: post})=>(        
@@ -48,6 +90,21 @@ export default () => {
           </div>
         </article>        
       ))}
+
+      {socialLinks.map(link => (
+        <div className={ css.post }>
+          <div className={ css.inside }>
+            <a href={ link.link } target="_blank" rel="noopener noreferrer" >
+              <Img fluid={link.image.childImageSharp.fluid} className={css.thumbnail}/>
+            </a>
+            <a className={css.title} href={ link.link } target="_blank" rel="noopener noreferrer" >
+              { link.title }
+            </a>
+          </div>
+        </div>
+      ))}
+      
+
     </div>
   )
 }
