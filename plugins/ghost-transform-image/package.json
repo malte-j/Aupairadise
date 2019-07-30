@@ -1,0 +1,11 @@
+{
+  "name": "ghost-transform-image",
+  "version": "0.0.1",
+  "description": "Transforms Ghost images inside of html context",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Malte Janßen",
+  "license": "MIT"
+}

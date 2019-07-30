@@ -1,20 +1,24 @@
 import React from "react"
-import css from "./index.module.scss"
+// import css from "./index.module.scss"
 // import Img from "gatsby-image"
 
-import Layout from "../../components/layout"
-import BlogPreview from "../../components/blogPreview"
+// import Layout from "../../components/layout"
+// import BlogPreview from "../../components/blogPreview"
 
-export default () => {
-  return (
-    <Layout>
-      <div>
+// export default () => {
+//   return (
+//     // <Layout>
+//     //   <div>
         
-        <h1 className={ css.title }>Mein Blog</h1> 
+//     //     <h1 className={ css.title }>Mein Blog</h1> 
         
-        <BlogPreview/> 
+//     //     <BlogPreview/> 
 
-      </div>
-    </Layout>
-  )
-}
+//     //   </div>
+//     // </Layout>
+//     <div>
+//       <h1>Blog</h1>
+//     </div>
+//     )
+// }
+export default <div>blog</div>
