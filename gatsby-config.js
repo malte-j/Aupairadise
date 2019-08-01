@@ -46,26 +46,13 @@ module.exports = {
               ? ghostConfig.development
               : ghostConfig.production,
     },
-    
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: 'gatsby-remark-relative-images',
-    //         options: {
-    //           name: 'uploads',
-    //         },
-    //       },
-    //       {
-    //         resolve: 'gatsby-remark-images',
-    //         options: {
-    //           maxWidth: 800,
-    //         },
-    //       },
-    //     ]
-    //   }  
-    // },
-    // `gatsby-plugin-netlify-cms`
+    {
+      resolve: `gatsby-plugin-remote-images`,
+        options: {
+          nodeType: `GhostPost`,
+          imagePath: `feature_image`,
+          name: `featuredImage`,
+        },
+    }
   ],
 }

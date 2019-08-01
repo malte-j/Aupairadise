@@ -2,31 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 
-// import Layout from "../components/layout"
-// import "./blog-post.scss"
-
-
-export default ({data})=>{
-  const post = data.ghostPost
-
-
-  return (
-    <article>
-      <h1>{ post.title }</h1>
-      <section dangerouslySetInnerHTML={{ __html: post.html }}/>>
-    </article>
-  )
-}
-
-export const postQuery = graphql`
-    query($slug: String!) {
-        ghostPost(slug: { eq: $slug }) {
-            title,
-            html
-        }
-    }
-`
-
+import Layout from "../components/layout"
+import "./blog-post.scss"
 
 // const NonStretchedImage = props => {
 //   let normalizedProps = props
@@ -43,32 +20,39 @@ export const postQuery = graphql`
 //   return <Img {...normalizedProps} />
 // }
 
-// export default function Template({
-//   data, // this prop will be injected by the GraphQL query below.
-// }) {
-//   const { markdownRemark } = data // data.markdownRemark holds our post data
-//   const { frontmatter, html } = markdownRemark
+export default ({ data }) =>{
+  const { ghostPost: post } = data
+    
+  return (
+    <Layout>
+      <article>
+        {/* {
+          (frontmatter.featuredimage ? 
+            <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
+          : "")
 
-//   return (
-//     <Layout>
-//       <article>
-//         {
-//           (frontmatter.featuredimage ? 
-//             <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
-//           : "")
+        } */}
+        <div className="header">
+          <h1 className="title" >{ post.title }</h1>
+          <h2 className="date">{ post.published_at } </h2>
+        </div>
+        <section>
+          <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        </section>
+      </article>
+    </Layout>
+  )
+}
 
-//         }
-//         <div className="header">
-//           <h1 className="title" >{ frontmatter.title }</h1>
-//           <h2 className="date">{ frontmatter.date} </h2>
-//         </div>
-//         <section>
-//           <div dangerouslySetInnerHTML={{ __html: html }}></div>
-//         </section>
-//       </article>
-//     </Layout>
-//   )
-// }
+export const postQuery = graphql`
+    query($slug: String!) {
+        ghostPost(slug: { eq: $slug }) {
+            title
+            published_at(locale: "de", formatString: "DD. MMMM YYYY")
+            html
+        }
+    }
+`
 
 // export const pageQuery = graphql`
 //   query($id: String!) {

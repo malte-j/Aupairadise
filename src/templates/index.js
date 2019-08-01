@@ -5,13 +5,11 @@ import css from "./index.module.scss"
 import logo from "../../static/AupairadiseLogoBig.svg"
 
 import Layout from "../components/layout"
-// import BlogPreview from "../components/blogPreview"
+import BlogPreview from "../components/blogPreview"
 
 export default ({ data }) => {
   
   const { description } = data.allGhostSettings.nodes[0]
-
-  console.log(data)
 
   return (
   <Layout>
@@ -20,16 +18,37 @@ export default ({ data }) => {
       <h2>{ description }</h2>
 		</header>
 		    
-    {/* <BlogPreview/> */}
+    <BlogPreview posts={data.allGhostPost.edges}/>
   </Layout>)
 }
 
 export const pageQuery = graphql`
-query {
+query GhostPostQuery($limit: Int!, $skip: Int!) {
   allGhostSettings {
     nodes {
       description
     }
   }
+
+  allGhostPost(
+        sort: { order: DESC, fields: [published_at] },
+        limit: $limit,
+        skip: $skip
+    ) {
+      edges {
+        node {
+          title,
+          slug,
+          feature_image,
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
 }
 `
