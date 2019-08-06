@@ -1,6 +1,6 @@
 let ghostConfig
 
-if (process.NODE_ENV) {
+if (process.env.NODE_ENV === `development`) {
     ghostConfig = require(`./.ghost`)
 } else {
   ghostConfig = {
