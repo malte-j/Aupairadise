@@ -54,7 +54,6 @@ export default ({ posts }) => {
     <div className={css.posts}>
       {posts.map(({node: post})=>(        
         <article className={css.post} key={post.slug}>
-        {console.log(post)}
           <div className={css.inside}>
             <Link to={`/${post.slug}/`} > 
               <Img fluid={post.featuredImage.childImageSharp.fluid} className={css.thumbnail}/>

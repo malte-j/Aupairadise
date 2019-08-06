@@ -45,8 +45,6 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.url,
       component: pageTemplate,
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
         slug: node.slug,
       },
     })
@@ -62,8 +60,6 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.url,
       component: postTemplate,
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
         slug: node.slug,
       },
     })
