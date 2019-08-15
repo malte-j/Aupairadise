@@ -27,7 +27,7 @@
 			padding-top: 75%;
 		}
 		
-		&:first-child {
+		&:first-child, &:nth-child(7) {
 			grid-column: span 2;
 
 			&:before {
@@ -46,6 +46,10 @@
 			top: 0;
 			width: 100%;
 			
+			>a:first-child>div>div{
+				padding-bottom: 100%!important;
+			}
+
 			a:first-child {
 				width: 100%;
 				height: 100%;
@@ -91,11 +95,16 @@
     .post {
 			grid-column: span 2;
 
-			&:before {
+			.inside>a:first-child>div>div{
+				padding-bottom: 50%!important;
+			}
 
+			&:before {
 				padding-top: 50%;
 			}
 			
+
+			// Social Media links, fill space
 			&.social:last-child:before {
 				padding-top: 50%;
 			}

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import "./blog-post.scss"
@@ -26,19 +26,20 @@ export default ({ data }) =>{
   return (
     <Layout>
       <article>
-        {/* {
-          (frontmatter.featuredimage ? 
-            <NonStretchedImage className='featuredImage' fluid={frontmatter.featuredimage.childImageSharp.fluid}/>
-          : "")
-
-        } */}
-        <div className="header">
-          <h1 className="title" >{ post.title }</h1>
-          <h2 className="date">{ post.published_at } </h2>
+        <div className="wrapper">
+          <Img className="thumbnail" fluid={ post.featuredImage.childImageSharp.fluid }/>
         </div>
-        <section>
-          <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-        </section>
+        
+        <div className="content">
+          <div className="header">
+            <h1 className="title" >{ post.title }</h1>
+            <h2 className="date">{ post.published_at } </h2>
+          </div>
+          
+          <section>
+            <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+          </section> 
+        </div>
       </article>
     </Layout>
   )
@@ -46,11 +47,18 @@ export default ({ data }) =>{
 
 export const postQuery = graphql`
     query($slug: String!) {
-        ghostPost(slug: { eq: $slug }) {
-            title
-            published_at(locale: "de", formatString: "DD. MMMM YYYY")
-            html
-        }
+      ghostPost(slug: { eq: $slug }) {
+          title
+          published_at(locale: "de", formatString: "DD. MMMM YYYY")
+          html
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+      }
     }
 `
 
@@ -63,7 +71,7 @@ export const postQuery = graphql`
 //         title
 //         featuredimage {
 //           childImageSharp {
-//             fluid(maxWidth: 1200) {
+//             fluid(maxWidth: 700) {
 //               ...GatsbyImageSharpFluid
 //               presentationWidth
 //             }
