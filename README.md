@@ -6,7 +6,7 @@
 
 A kinda static Website, generated using Gatsby and a custom theme, with data and embedded images, except for featured images, from a Ghost Blog. 
 
-![Aupairadise Screenshot](https://user-images.githubusercontent.com/12611076/62537517-e4617f00-b850-11e9-8a61-82fcf7ed263b.png)
+![Aupairadise Screenshot](https://user-images.githubusercontent.com/12611076/62544286-c64f4b00-b85f-11e9-98fa-875846776895.gif)
 
 # Development
 To start developing, create a `.ghost.json` file containing the API connection details of your Ghost install. You can create them by accessing the "Integrations" tab in your Ghost Admin and creating a custom integration. It should have the following structure: 
