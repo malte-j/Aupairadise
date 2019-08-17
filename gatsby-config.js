@@ -53,6 +53,21 @@ module.exports = {
           imagePath: `feature_image`,
           name: `featuredImage`,
         },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Aupairadise",
+        short_name: "Aupairadise",
+        description: `Hey, mein Name ist Luise, willkommen auf diesem Blog über mein Aupairjahr in Amerika!`,
+        lang: `de`,
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
+        display: "standalone",
+        icon: "src/assets/Favicon.png", // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
+      },
+    },
   ],
 }
