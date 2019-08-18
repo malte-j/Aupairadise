@@ -27,7 +27,7 @@
 			padding-top: 75%;
 		}
 		
-		&:first-child, &:nth-child(7) {
+		&:first-child {
 			grid-column: span 2;
 
 			&:before {
