@@ -10,7 +10,7 @@ export default ({data}) => {
   <Layout>
     <section>
       <h1 className='pageTitle'>{ page.title }</h1>
-      <div dangerouslySetInnerHTML={{ __html: page.html }}></div>
+      <div className='content' dangerouslySetInnerHTML={{ __html: page.html }}></div>
     </section>
   </Layout>)
 }
