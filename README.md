@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/SkyGuardian42/Aupairadise/master/static/AupairadiseLogoBig.svg?sanitize=true"/>
 </a>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/01e02403-561e-49e6-9a35-c238a16cce63/deploy-status)](https://app.netlify.com/sites/aupairadise/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1dbf6202-11f1-4fbf-92b7-dcf049641a79/deploy-status)](https://app.netlify.com/sites/aupairadise-ghost/deploys)
 
 A kinda static Website, generated using Gatsby and a custom theme, with data and embedded images, except for featured images, from a Ghost Blog. 
 
