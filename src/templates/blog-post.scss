@@ -1,27 +1,47 @@
 @import "../styles/layout.scss";
 
-.featuredImage {
-  margin: 0 auto;
-  max-height: 30vh;
-  min-width: $desktopMaxWidth;
+.wrapper {
+  height: 40vh;
 }
 
-@media (max-width: $desktopMaxWidth) {
-  .featuredImage {
-    width: 100vw;
-    min-width: 100%;
+.thumbnail {
+  position: fixed!important;
+  height: 40vh;
+  max-width: 740px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 0 0 12px 12px;
+
+  @media(max-width: 700px) {
+    border-radius: 0;
   }
+}
+
+.content {
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  @media(max-width: 700px) {
+    border-radius: 18px;
+    transform: translateY(-18px);
+  }
+
+  transition: transform .4s ease, border-radius .4s ease;
+
 }
 
 .header {
   margin: 3em 0;
-
 }
 
 .title {
   text-align: center;
-  font-size: 2.5em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: "PT Serif";
   margin: 0;
 }
 
@@ -46,7 +66,10 @@ section  p + p {
   transition: padding .2s ease-in-out;
   
   @media(min-width: $desktopMaxWidth) {
-    padding-top: 1em;
+    // padding-top: 1em;
   }
 }
 
+img {
+  max-width: 100%;
+}

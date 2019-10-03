@@ -1,39 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import css from "./index.module.scss"
 import Img from "gatsby-image"
 
-export default () => {
+import css from "./index.module.scss"
+
+export default ({ posts }) => {
   const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: {
-          frontmatter:
-            {templateKey: {eq: "blog-post"}}
-        },
-        limit: 8
-      ){
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              date
-              featuredimage {
-                childImageSharp {
-                  fluid(maxWidth: 700) {
-                   ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    
+    query {    
       soundcloud: file(relativePath: {eq: "socialImages/Soundcloud.jpg"}) {
         childImageSharp {
           
@@ -58,7 +31,6 @@ export default () => {
       }
     }
   `)
-  const { edges: posts } = data.allMarkdownRemark;
 
   const socialLinks = [
     {
@@ -81,12 +53,12 @@ export default () => {
   return (
     <div className={css.posts}>
       {posts.map(({node: post})=>(        
-        <article className={css.post} key={post.fields.slug}>
+        <article className={css.post} key={post.slug}>
           <div className={css.inside}>
-            <Link to={post.fields.slug} > 
-              <Img fluid={post.frontmatter.featuredimage.childImageSharp.fluid} className={css.thumbnail}/>
+            <Link to={`/${post.slug}/`} > 
+              <Img fluid={post.featuredImage.childImageSharp.fluid} className={css.thumbnail}/>
             </Link>
-            <Link className={css.title} to={post.fields.slug}> {post.frontmatter.title} </Link>
+            <Link className={css.title} to={`/${post.slug}/`}> { post.title } </Link>
           </div>
         </article>        
       ))}

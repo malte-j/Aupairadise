@@ -28,8 +28,9 @@ $max_width: 1020px;
 $min_font: 16px;
 $max_font: 20px;
 
-$body_font: 'PT Serif';
-$heading_font: sans-serif;
+$body_font: 'PT Serif', serif;
+$heading_font: 'PT Serif', serif;
+
 
 * {
   box-sizing: border-box;
@@ -40,6 +41,7 @@ html {
 	font-size: 10px;
   height: 100%;
   font-family: $body_font;
+  background: #ffffff;
 }
 
 body {
@@ -70,8 +72,11 @@ body {
 
 section {
   max-width: $desktopMaxWidth;
-  padding: 1em;
   margin: 0 auto;
+  padding: 1em 0em;
+  @media (max-width: 700px) {
+    padding: 1em;
+  }
 }
 
 .pageTitle {
@@ -88,6 +93,21 @@ p {
   line-height: 1.6em;
 }
 
+.content a {
+  color: inherit;
+  text-decoration: none;
+  background-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="rgba(0, 0, 0, 0.84)" /></svg>');
+  background-size: 1px 1px;
+  background-position: 0 calc(1.1em + 1px);
+  background-repeat: repeat-x;
+  text-decoration-color: black;
+  &:hover {
+    background-image: none;
+    text-decoration: underline;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
+  font-family: $body_font;
+  font-weight: 500;
 }

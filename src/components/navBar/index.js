@@ -48,7 +48,6 @@ const Navbar = class extends React.Component {
           <div className={css.wrapper}>
             <Link to="/"><img src={ logo } alt=""/></Link>
             <div className={ css.links }>
-              <Link to="/blog">Blog</Link>
               <Link to="/ich">Über mich</Link>
               <Link to="/kontakt">Kontakt</Link>
             </div>
