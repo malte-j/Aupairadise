@@ -6,10 +6,12 @@ import logo from "../../static/AupairadiseLogoBig.svg"
 
 import Layout from "../components/layout"
 import BlogPreview from "../components/blogPreview"
+// import Pagination from "../components/pagination"
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   
   const { description } = data.allGhostSettings.nodes[0]
+  console.log(pageContext)
 
   return (
   <Layout>
@@ -19,8 +21,10 @@ export default ({ data }) => {
 		</header>
 		    
     <BlogPreview posts={data.allGhostPost.edges}/>
+    {/* <Pagination pageContext={pageContext}/> */}
   </Layout>)
 }
+
 
 export const pageQuery = graphql`
 query GhostPostQuery($limit: Int!, $skip: Int!) {

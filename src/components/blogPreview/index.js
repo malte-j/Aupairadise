@@ -6,15 +6,7 @@ import css from "./index.module.scss"
 
 export default ({ posts }) => {
   const data = useStaticQuery(graphql`
-    query {    
-      soundcloud: file(relativePath: {eq: "socialImages/Soundcloud.jpg"}) {
-        childImageSharp {
-          
-          fluid(maxWidth: 700, quality: 90) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+    query {   
       instagram: file(relativePath: {eq: "socialImages/Instagram.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 700, quality: 90) {
@@ -40,14 +32,9 @@ export default ({ posts }) => {
     },
     {
       title: "Podcast",
-      link: "https://soundcloud.com/aupairadise",
-      image: data.soundcloud
-    }, 
-    {
-      title: "Podcast",
       link: "https://open.spotify.com/show/7znUWUFuaMUFdSyV564bQt",
       image: data.spotify
-    },
+    }
   ]
 
   return (

@@ -2,12 +2,12 @@
 
 .posts {
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 2rem;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0 auto;
 	padding: 1rem;
 	width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
 	
 	.post {
 		border-radius: 20px;
@@ -66,7 +66,7 @@
 				color: white;
 				font-weight: 600;
 				margin: 0;
-				padding: 0.6rem;
+				padding: 1rem;
 				position: absolute;
 				z-index: 0;
         text-decoration: none;
@@ -102,14 +102,8 @@
 			&:before {
 				padding-top: 50%;
 			}
-			
 
-			// Social Media links, fill space
-			&.social:last-child:before {
-				padding-top: 50%;
-			}
-			
-			&.social:not(:last-child){		
+			&.social{		
 				grid-column: span 1;
 				
 				&:before {
