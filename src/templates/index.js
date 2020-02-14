@@ -6,7 +6,7 @@ import logo from "../../static/AupairadiseLogoBig.svg"
 
 import Layout from "../components/layout"
 import BlogPreview from "../components/blogPreview"
-// import Pagination from "../components/pagination"
+import Pagination from "../components/pagination"
 
 export default ({ data, pageContext }) => {
   
@@ -21,7 +21,7 @@ export default ({ data, pageContext }) => {
 		</header>
 		    
     <BlogPreview posts={data.allGhostPost.edges}/>
-    {/* <Pagination pageContext={pageContext}/> */}
+    <Pagination pageContext={pageContext}/>
   </Layout>)
 }
 
