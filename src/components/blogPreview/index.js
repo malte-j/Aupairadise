@@ -43,7 +43,7 @@ export default ({ posts }) => {
         <article className={css.post} key={post.slug}>
           <div className={css.inside}>
             <Link to={`/${post.slug}/`} > 
-              <Img fluid={post.featuredImage.childImageSharp.fluid} className={css.thumbnail}/>
+              <Img fluid={post.featuredImage.childImageSharp.fluid} loading="lazy" className={css.thumbnail}/>
             </Link>
             <Link className={css.title} to={`/${post.slug}/`}> { post.title } </Link>
           </div>
