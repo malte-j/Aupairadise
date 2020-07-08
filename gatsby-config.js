@@ -1,15 +1,15 @@
 let ghostConfig
 
-// if (process.env.NODE_ENV === `development`) {
+if (process.env.NODE_ENV === `development`) {
     ghostConfig = require(`./.ghost`)
-// } else {
-//   ghostConfig = {
-//     production: {
-//       apiUrl: process.env.GHOST_API_URL,
-//       contentApiKey: process.env.GHOST_CONTENT_API_KEY,
-//     },
-//   }
-// }
+} else {
+  ghostConfig = {
+    production: {
+      apiUrl: process.env.GHOST_API_URL,
+      contentApiKey: process.env.GHOST_CONTENT_API_KEY,
+    },
+  }
+}
 
 const { apiUrl, contentApiKey } = process.env.NODE_ENV === `development` ? ghostConfig.development : ghostConfig.production
 
