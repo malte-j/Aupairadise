@@ -46,8 +46,8 @@ query GhostPostQuery($limit: Int!, $skip: Int!) {
           feature_image,
           featuredImage {
             childImageSharp {
-              fluid(maxWidth: 700, maxHeight: 700) {
-                ...GatsbyImageSharpFluid
+              fluid(maxWidth: 380, maxHeight: 380) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
